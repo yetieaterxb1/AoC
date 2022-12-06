@@ -3,7 +3,48 @@ import chalk from 'chalk';
 
 export async function day2a(dataPath?: string) {
   const data = await readData(dataPath);
-  return 0;
+
+  let total = 0;
+
+  for (var i = 0; i < data.length; i++) {
+    let elfLetter = data[i][0];
+    let yourLetter = data[i][data[i].length - 1];
+
+    if (elfLetter === 'A') {
+      if (yourLetter === 'X') {
+        total = total + 4;
+      }
+      if (yourLetter === 'Y') {
+        total = total + 8;
+      }
+      if (yourLetter === 'Z') {
+        total = total + 3;
+      }
+    }
+    if (elfLetter === 'B') {
+      if (yourLetter === 'X') {
+        total = total + 1;
+      }
+      if (yourLetter === 'Y') {
+        total = total + 5;
+      }
+      if (yourLetter === 'Z') {
+        total = total + 9;
+      }
+    }
+    if (elfLetter === 'C') {
+      if (yourLetter === 'X') {
+        total = total + 7;
+      }
+      if (yourLetter === 'Y') {
+        total = total + 2;
+      }
+      if (yourLetter === 'Z') {
+        total = total + 6;
+      }
+    }
+  }
+  return total;
 }
 
 // don't change below this line
