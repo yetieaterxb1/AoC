@@ -6,9 +6,9 @@ export async function day2a(dataPath?: string) {
 
   let total = 0;
 
-  for (var i = 0; i < data.length; i++) {
-    let elfLetter = data[i][0];
-    let yourLetter = data[i][data[i].length - 1];
+  for (let i = 0; i < data.length; i++) {
+    const elfLetter = data[i][0];
+    const yourLetter = data[i][data[i].length - 1];
 
     if (elfLetter === 'A') {
       if (yourLetter === 'X') {
