@@ -32,7 +32,6 @@ const part1 = (rawInput: string) => {
   return answer;
 };
 
-// ts-expect-error
 function extractNumbers(data) {
   const copy = {
     one: "o1e",
