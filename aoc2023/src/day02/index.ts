@@ -68,14 +68,14 @@ const part2 = (rawInput: string) => {
       if (
         parseInt(contains[k]) &&
         contains[k + 1] === "red" &&
-        (colors.red == undefined || parseInt(contains[k]) > colors.red)
+        (colors.red === undefined || parseInt(contains[k]) > colors.red)
       )
         colors.red = parseInt(contains[k]);
 
       if (
         parseInt(contains[k]) &&
         contains[k + 1] === "green" &&
-        (colors.green == undefined || parseInt(contains[k]) > colors.green)
+        (colors.green === undefined || parseInt(contains[k]) > colors.green)
       )
         colors.green = parseInt(contains[k]);
 
